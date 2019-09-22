@@ -11,7 +11,7 @@ define('CORE', ERRO.'/core');
 define('APP', ERRO.'/app');
 define('RESOURCE', ERRO.'/static');
 define('MODULE', 'app');
-define('DEBUG', false);
+define('DEBUG', true);
 
 include "vendor/autoload.php";
 

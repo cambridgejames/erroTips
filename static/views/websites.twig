@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+<head>
+	<meta charset="UTF-8">
+	<title>站点浏览</title>
+	<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<ul class="weblist">
+		{% for webitem in weblist %}
+			<li class="webitem">
+				<img src="{{ webitem['icon'] }}" />
+				<h3>{{ webitem['title'] }}</h3>
+				<p>{{ webitem['view'] }}</p>
+			</li>
+		{% endfor %}
+	</ul>
+</body>
+
+<!-- SCRIPT -->
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- END SERIPT -->
+
+</html>

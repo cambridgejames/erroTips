@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>{{ code }}</title>
+<link rel="stylesheet" type="text/css" href="/static/css/error-common.css">
+<script type="text/javascript" src="/static/js/time.js"></script>
+</head>
+<body>
+<div id="clock">
+    <p class="date">...{{ code }} {{ text }}...</p>
+    <p class="time">{{ time }}</p>
+    <p class="text">{{ date }}</p>
+</div>
+<script>
+var clock = new Vue({
+    el: '#clock',
+    data: {
+        time: '',
+        date: ''
+    }
+});
+var week = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+var timerID = setInterval(updateTime, 1000);
+updateTime();
+function updateTime() {
+    var cd = new Date();
+    clock.time = zeroPadding(cd.getHours(), 2) + ':' + zeroPadding(cd.getMinutes(), 2) + ':' + zeroPadding(cd.getSeconds(), 2);
+    clock.date = zeroPadding(cd.getFullYear(), 4) + '-' + zeroPadding(cd.getMonth()+1, 2) + '-' + zeroPadding(cd.getDate(), 2) + ' ' + week[cd.getDay()];
+};
+function zeroPadding(num, digit) {
+    var zero = '';
+    for(var i = 0; i < digit; i++) {
+        zero += '0';
+    }
+    return (zero + num).slice(-digit);
+}</script>
+</body>
+ 
+</html>

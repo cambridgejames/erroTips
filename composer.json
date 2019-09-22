@@ -1,0 +1,13 @@
+{
+	"name": "compsys/errotips",
+	"description": "PHP Framework",
+	"type": "Framework",
+	"keywords": [
+		"PHP", "PHP Framework", "Error"
+	],
+	"require": {
+		"php": ">= 7.0.0",
+		"filp/whoops": "*",
+		"twig/twig": "^1.0"
+	}
+}

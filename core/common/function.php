@@ -10,7 +10,20 @@ function p($var)
 	}
 }
 
-function stackTrace($code, $content)
+function customerror($error_level, $error_message, $error_file, $error_line, $error_context)
 {
-	return array("error" => $code, "error_content" => $content, "get_data" => $_GET, "post_data" => $_POST);
+	die();
+}
+
+function customexception($exception)
+{
+	header('Location: /error/403');
+	die();
+}
+
+function customend()
+{
+	if(error_get_last()) {
+		die();
+	}
 }

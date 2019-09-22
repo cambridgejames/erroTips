@@ -9,9 +9,9 @@
 define('ERRO', realpath('./'));
 define('CORE', ERRO.'/core');
 define('APP', ERRO.'/app');
-define('RESOURCE', '/static');
+define('RESOURCE', ERRO.'/static');
 define('MODULE', 'app');
-define('DEBUG', true);
+define('DEBUG', false);
 
 include "vendor/autoload.php";
 
@@ -29,6 +29,11 @@ include CORE.'/erro.php';
 
 spl_autoload_register('\core\erro::load');
 
+// 下面注册全局捕捉函数
+if(!DEBUG) {
+	//set_error_handler('customerror');
+	set_exception_handler('customexception');
+	register_shutdown_function('customend');
+}
 
-session_start();
 \core\erro::run();

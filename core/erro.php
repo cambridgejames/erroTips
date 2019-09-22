@@ -22,20 +22,10 @@ class erro
 			if(method_exists($ctrl, $action)) {
 				$ctrl->$action();
 			} else {
-				if(DEBUG) {
-					throw new \Exception('找不到方法'.$action);
-				} else {
-					header('Content-Type:application/json; charset=utf-8');
-					exit(json_encode(stackTrace("00101", "在控制器".$route->ctrl."中找不到方法".$action)));
-				}
+				throw new \Exception('找不到方法'.$action);
 			}
 		} else {
-			if(DEBUG) {
-				throw new \Exception('找不到控制器'.$ctrlClass);
-			} else {
-				header('Content-Type:application/json; charset=utf-8');
-				exit(json_encode(stackTrace("00102", "找不到控制器".$route->ctrl)));
-			}
+			throw new \Exception('找不到控制器'.$ctrlClass);
 		}
 	}
 
@@ -64,10 +54,10 @@ class erro
 
 	public function display($file)
 	{
-		$path = '/views/'.$file;
+		$path = RESOURCE.'/views/'.$file;
 		if(is_file($path)) {
 			\Twig_Autoloader::register();
-			$loader = new \Twig_Loader_Filesystem('/views');
+			$loader = new \Twig_Loader_Filesystem(RESOURCE.'/views');
 			$twig = new \Twig_Environment($loader, array(
 				'cache' => ERRO.'/template',
 				'debug' => DEBUG

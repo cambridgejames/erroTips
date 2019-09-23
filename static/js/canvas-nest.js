@@ -1,4 +1,4 @@
-! function () {
+function canvasNest() {
 
     //返回w元素的v属性的值，若不存在返回i
     function o(w, v, i) {
@@ -92,4 +92,4 @@
     setTimeout(function () {
         b()
     }, 100)
-}();
+};

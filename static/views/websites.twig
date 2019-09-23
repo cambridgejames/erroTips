@@ -14,11 +14,11 @@
 				<div class="itembox">
 					<div class="imgbox" style="background-image: url({{ webitem['icon'] }})"></div>
 					<div class="titlebox">
-						<h3>{{ webitem['title'] }}</h3>
+						<h3 title="{{ webitem['title'] }}">{{ webitem['title'] }}</h3>
 						<h5>{{ webaddress }}</h5>
 					</div>
 					<div class="inner-line"></div>
-					<p>{{ webitem['view'] }}</p>
+					<p title="{{ webitem['view'] }}">{{ webitem['view'] }}</p>
 				</div>
 			</li>
 		{% endfor %}
@@ -29,6 +29,7 @@
 <!-- SCRIPT -->
 <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/static/js/canvas-nest.js"></script>
 <!-- END SERIPT -->
 
 </html>

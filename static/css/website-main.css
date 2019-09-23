@@ -26,12 +26,17 @@ ul, ol, li {
 	border: 1px solid #CCC;
 	border-radius: 5px;
 	background-image: -webkit-linear-gradient(top, #FFF, #F9F9F9);
-	transition: box-shadow 0.2s ease-in-out;
+	-webkit-transition: box-shadow, margin-top, 0.1s linear;
+	-ms-transition: box-shadow, margin-top, 0.1s linear;
+	-moz-transition: box-shadow, margin-top, 0.1s linear;
+	-o-transition: box-shadow, margin-top, 0.1s linear;
+	transition: box-shadow, margin-top, 0.1s linear;
 	cursor: pointer;
 }
 
 .webitem > .itembox:hover {
 	box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+	margin-top: -2px;
 }
 
 .webitem > .itembox > .imgbox {

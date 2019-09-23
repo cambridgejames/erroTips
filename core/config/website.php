@@ -2,6 +2,11 @@
 
 return array(
 	'list' => array(
+		'www.compscosys.cn' => array(
+			'icon' => '/favicon.ico',
+			'title' => '站点目录管理器',
+			'view' => '用于管理多个虚拟网站，提供网站的入口；同时可用于自定义错误代码（如404、500等）的显示'
+		),
 		'itexam.compscosys.cn' => array(
 			'icon' => '/static/img/itexam.ico',
 			'title' => 'ITEXAM网上作业系统',

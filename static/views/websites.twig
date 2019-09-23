@@ -2,13 +2,34 @@
 <html lang="zh-CH">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
 	<title>站点浏览</title>
 	<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/static/css/website-main.css">
 </head>
 <body>
+	<div class="col-lg-8 col-md-10 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-1 col-sm-offset-1 main-header">
+		<h3><font class="glyphicon glyphicon-th-large"></font> 站点浏览</h3>
+		<div class="inner-line"></div>
+		<form class="form-horizontal" role="form">
+			<div class="form-group">
+				<div class="col-sm-12">
+					<div class="input-group">
+						<input type="text" class="form-control" id="firstname" placeholder="模糊查找" />
+						<span class="input-group-btn">
+							<span class="btn btn-success" type="button">查 找</span>
+						</span>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+
 	{# LIST OF WEBSITES #}
-	<ul class=" col-lg-8 col-md-10 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-1 col-sm-offset-1 weblist">
+	<ul class="col-lg-8 col-md-10 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-1 col-sm-offset-1 weblist">
 		{% for webaddress, webitem in weblist %}
 			<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 webitem" data-tag="{{ webaddress }}">
 				<div class="itembox">
@@ -24,6 +45,23 @@
 		{% endfor %}
 	</ul>
 	{# END LIST #}
+
+	<div class="col-lg-8 col-md-10 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-1 col-sm-offset-1 main-footer">
+		<div class="inner-line"></div>
+		<div class="footer-copyright">
+			<span class="inline-group">版权所有&copy;&nbsp;Copyright&nbsp;2019&nbsp;&nbsp;站长、内容维护：Cambridge James</span>
+			<span class="inline-group">联系我：<a href="mailto:cambridge_james@foxmail.com">cambridge_james@foxmail.com</a></span>
+		</div>
+		<div class="footer-copyright">
+			<a class="" href="http://www.miitbeian.gov.cn" target='_blank'>
+				冀ICP备18027949号
+			</a>
+			<span>&nbsp;|&nbsp;</span>
+			<a class="" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=13092802000135" target='_blank'>
+				<img src="/static/img/record.png" height="14">冀公网安备13092802000135号
+			</a>
+		</div>
+	</div>
 </body>
 
 <!-- SCRIPT -->

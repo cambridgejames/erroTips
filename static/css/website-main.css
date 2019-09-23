@@ -1,4 +1,81 @@
-html, body, div, ul, ol, li, a, span {
+html, body, div, ul, ol, li, a, span, h1, h2, h3, h4, h5, h6  {
 	margin: 0;
 	padding: 0;
+}
+
+html body {
+	background-color: #FAFAFA;
+}
+
+ul, ol, li {
+	list-style: none;
+}
+
+
+
+.webitem {
+	height: 150px;
+	padding: 5px;
+}
+
+.webitem > .itembox {
+	height: 140px;
+	position: relative;
+	padding: 10px;
+	overflow: hidden;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	background-image: -webkit-linear-gradient(top, #FFF, #F9F9F9);
+	transition: box-shadow 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+.webitem > .itembox:hover {
+	box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.webitem > .itembox > .imgbox {
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	background-size: contain;
+	display: inline-block;
+}
+
+.webitem > .itembox > .titlebox {
+	display: inline-block;
+	height: 50px;
+	vertical-align: top;
+}
+
+.webitem > .itembox > .titlebox > h3 {
+	margin-top: 5px;
+	margin-left: 5px;
+	height: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+.webitem > .itembox > .titlebox > h5 {
+	margin-top: 9px;
+	margin-left: 5px;
+	height: 14px;
+	font-size: 14px;
+	color: #999;
+}
+
+.inner-line {
+	display: block;
+	height: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.webitem > .itembox > p {
+	height: 42px;
+	line-height: 21px;
+	font-size: 14px;
+	overflow: hidden;
+	margin-bottom: 0;
 }

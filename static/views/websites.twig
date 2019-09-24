@@ -29,9 +29,9 @@
 	</div>
 
 	{# LIST OF WEBSITES #}
-	<ul class="col-lg-8 col-md-10 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-1 col-sm-offset-1 weblist">
+	<ul id="weblist" class="col-lg-8 col-md-10 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-1 col-sm-offset-1 weblist">
 		{% for webaddress, webitem in weblist %}
-			<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 webitem" data-tag="{{ webaddress }}">
+			<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 webitem" data-tag="{{ webaddress }}" data-method="{{ webitem['method'] }}">
 				<div class="itembox">
 					<div class="imgbox" style="background-image: url({{ webitem['icon'] }})"></div>
 					<div class="titlebox">
@@ -53,7 +53,7 @@
 			<span class="inline-group">联系我：<a href="mailto:cambridge_james@foxmail.com">cambridge_james@foxmail.com</a></span>
 		</div>
 		<div class="footer-copyright">
-			<a class="" href="http://www.miitbeian.gov.cn" target='_blank'>
+			<a class="" href="http://beian.miit.gov.cn" target='_blank'>
 				冀ICP备18027949号
 			</a>
 			<span>&nbsp;|&nbsp;</span>
@@ -67,6 +67,7 @@
 <!-- SCRIPT -->
 <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/static/js/web-links.js"></script>
 <script type="text/javascript" src="/static/js/canvas-nest.js"></script>
 <script type="text/javascript">
 	function isPC() {

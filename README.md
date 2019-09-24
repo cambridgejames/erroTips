@@ -1,20 +1,20 @@
 # erroTips - 站点目录管理工具
-[![Latest Version on Packagist][ico-version]][link-packagist]
-[![Software License][ico-license]](LICENSE.md)
-[![Build Status][ico-travis]][link-travis]
-[![Total Downloads][ico-downloads]][link-downloads]
+![GitHub](https://img.shields.io/github/license/cambridgejames/erroTips)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/cambridgejames/erroTips?label=release)
+![GitHub repo size](https://img.shields.io/github/repo-size/cambridgejames/erroTips)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/cambridgejames/erroTips)
+![GitHub followers](https://img.shields.io/github/followers/cambridgejames?label=Follow&style=social)
 ---
 
-**简介：**本项目可以用于管理多个虚拟网站，提供网站的入口；同时可用于自定义错误代码（如404、500等）的显示。
+**简介：** 本项目可以用于管理多个虚拟网站，提供网站的入口；同时可用于自定义错误代码（如404、500等）的显示。
 
 注：本代码库中的错误代码显示页面来自[https://404.life](https://404.life)
 
-**部署地址：**[http://www.compscosys.cn](http://www.compscosys.cn)
+**部署地址：** [http://www.compscosys.cn](http://www.compscosys.cn)
 
 ---
 
 # 使用说明
----
 
 ### 1. 部署方法（以Apache2.4为例）
 1. 在服务器中配置一个新的虚拟站点
@@ -28,29 +28,24 @@
 
 ### 2. 站点列表显示模块
 ##### 1. 自定义站点信息
-修改"/core/config"目录下的website.php中的“list”项
-
-其中：每一项的key代表了站点的目标网址，method为站点的协议，icon为站点的图标，title为站点名称，view为站点简介
-
-需要注意的是，该文件使用PHP中的array语法定义错误代码和对应描述之间的关系。
++ 修改"/core/config"目录下的website.php中的“list”项
++ 其中：每一项的key代表了站点的目标网址，method为站点的协议，icon为站点的图标，title为站点名称，view为站点简介
++ 需要注意的是，该文件使用PHP中的array语法定义错误代码和对应描述之间的关系。
 
 
 ### 3. 错误代码显示模块
 ##### 1. 自定义错误提示页面
-修改"/static/views"目录下的errors.twig
-
-其中：错误代码使用"{{ code }}"代替，错误描述用"{{ text }}"代替。
-
-注意：页面模板文件必须遵循twig语法规范。
++ 修改"/static/views"目录下的errors.twig
++ 其中：错误代码使用"{{ code }}"代替，错误描述用"{{ text }}"代替。
++ 注意：页面模板文件必须遵循twig语法规范。
 
 ##### 2. 自定义错误提示代码和描述
-修改"/core/config"目录下的error.php
-
-需要注意的是，该文件使用PHP中的array语法定义错误代码和对应描述之间的关系。
++ 修改"/core/config"目录下的error.php
++ 需要注意的是，该文件使用PHP中的array语法定义错误代码和对应描述之间的关系。
 
 
 # 版本更新
----
+
 ### V1.02.0924
 1. 新增站点目录显示模块
 2. 修复了更改错误代码显示模块的页面模板文件后模块加载异常的问题
@@ -64,7 +59,7 @@
 
 
 # 开发文档
----
+
 
 ### 1. 开发环境
 + PHP 7.2.7
@@ -73,9 +68,7 @@
 
 
 # 版本仓库
----
-[GitHub](https://github.com/cambridgejames/erroTips)
 
+[GitHub: https://github.com/cambridgejames/erroTips](https://github.com/cambridgejames/erroTips)
 
----
 本项目遵循MIT开源许可协议，详情请见LICENSE文件

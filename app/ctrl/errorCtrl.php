@@ -30,7 +30,7 @@ class errorCtrl extends \core\erro
 		$this->assign('text', $this->text);
 		$this->assign('time', '{{ time }}');
 		$this->assign('date', '{{ date }}');
-		$this->display('errors.html');
+		$this->display('errors.twig');
 	}
 
 	public static function load($code) {

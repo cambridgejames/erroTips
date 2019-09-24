@@ -1,15 +1,16 @@
 # erroTips - 站点目录管理工具
-[![Latest Version on Packagist][ico-version]][link-packagist]
-[![Software License][ico-license]](LICENSE.md)
-[![Build Status][ico-travis]][link-travis]
-[![Total Downloads][ico-downloads]][link-downloads]
+![GitHub](https://img.shields.io/github/license/cambridgejames/erroTips)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/cambridgejames/erroTips?label=release)
+![GitHub repo size](https://img.shields.io/github/repo-size/cambridgejames/erroTips)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/cambridgejames/erroTips)
+![GitHub followers](https://img.shields.io/github/followers/cambridgejames?label=Follow&style=social)
 ---
 
-**简介：**本项目可以用于管理多个虚拟网站，提供网站的入口；同时可用于自定义错误代码（如404、500等）的显示。
+**简介：** 本项目可以用于管理多个虚拟网站，提供网站的入口；同时可用于自定义错误代码（如404、500等）的显示。
 
 注：本代码库中的错误代码显示页面来自[https://404.life](https://404.life)
 
-**部署地址：**[http://www.compscosys.cn](http://www.compscosys.cn)
+**部署地址：** [http://www.compscosys.cn](http://www.compscosys.cn)
 
 ---
 
@@ -74,8 +75,6 @@
 
 # 版本仓库
 ---
-[GitHub](https://github.com/cambridgejames/erroTips)
+[GitHub: https://github.com/cambridgejames/erroTips](https://github.com/cambridgejames/erroTips)
 
-
----
 本项目遵循MIT开源许可协议，详情请见LICENSE文件

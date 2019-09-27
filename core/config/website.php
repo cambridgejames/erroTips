@@ -26,6 +26,24 @@ return array(
 			'title' => '学生数据可视化展示',
 			'view' => '一个学生信息数据可视化展示页面'
 		),
+		'cambridgejames.github.io' => array(
+			'icon' => '/static/img/hexo.svg',
+			'method' => 'https',
+			'title' => '史上最帅的技术宅',
+			'view' => "一个专注于分享各种技术知识的个人博客，基于hexo和 GitHub Pages"
+		),
+		'me.csdn.net/qq_37796982' => array(
+			'icon' => '/static/img/csdn.svg',
+			'method' => 'https',
+			'title' => 'CSDN博客个人空间',
+			'view' => "一个专注于分享各种技术知识的个人博客，基于CSDN"
+		),
+		'www.jianshu.com/u/b201f608dea5' => array(
+			'icon' => '/static/img/jianshu.svg',
+			'method' => 'https',
+			'title' => '简书个人主页',
+			'view' => "一个专注于分享各种技术知识的个人博客，基于简书"
+		),
 		'gitblit.compscosys.cn:8080' => array(
 			'icon' => '/static/img/gitblit.svg',
 			'method' => 'http',

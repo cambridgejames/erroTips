@@ -6,3 +6,10 @@ $(document).on("click", "#weblist>li>.itembox", function() {
 	$(window).attr("location", method + "://" + domainName);
 	console.log(domainName);
 });
+
+$(document).ready(function() {
+	// 仅在PC端播放动态背景
+	if(isPC()){
+		canvasNest();		//这里执行的是PC端的代码；
+	}
+});

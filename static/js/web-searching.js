@@ -1,7 +1,7 @@
 /*
  * 站点列表显示控制器
  */
-function ListSearchCtroler(listNode) {
+function ListSearchControler(listNode) {
 	// 站点模糊搜索控制器
 	// @Input: 站点列表的jQuery对象
 	this.listNode = listNode;
@@ -83,7 +83,7 @@ function ListSearchCtroler(listNode) {
 	}
 
 	function keyWordsHighLighter(curString, keyWords) {
-		// 功能：定义长须如何高亮显示关键词
+		// 功能：定义程序如何高亮显示关键词
 		for(var index = 0; index < keyWords.length; index++) {
 			curString = curString.replace(new RegExp(keyWords[index],"g"), "<span class='text-danger'>" + keyWords[index] + "</span>");
 		}
@@ -129,7 +129,7 @@ function ListSearchCtroler(listNode) {
 		box.children('p').html(curInfo['view']);
 	}
 }
-var searchCtrl = new ListSearchCtroler($("#weblist"));
+var searchCtrl = new ListSearchControler($("#weblist"));
 
 /*
  * 下面为控制器绑定事件

@@ -141,6 +141,16 @@ $(document).ready(function() {
 
 $(document).on("click", "#search-btn", function() {
 	// 功能：当用户点击“搜索”按钮时执行模糊查找命令
+	startSearch();
+});
+
+$(document).on("keydown", "#search-ipt", function(e) {
+	// 功能：当用户在搜索栏中按下按回车键时执行模糊查找命令
+	if(e.keyCode === 13) startSearch();
+});
+
+function startSearch() {
+	// 功能：启动模糊查找
 	var rawWords = $("#search-ipt").val().split(" ");
 	var keyWords = [];
 	for(var i = 0; i < rawWords.length; i++) {
@@ -149,4 +159,4 @@ $(document).on("click", "#search-btn", function() {
 		}
 	}
 	searchCtrl.search(keyWords);			// 开始模糊搜索算法
-});
+}

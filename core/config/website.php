@@ -38,6 +38,12 @@ return array(
 			'title' => 'CSDN博客个人空间',
 			'view' => "一个专注于分享各种技术知识的个人博客，基于CSDN"
 		),
+		'www.jianshu.com/u/b201f608dea5' => array(
+			'icon' => '/static/img/jianshu.svg',
+			'method' => 'https',
+			'title' => '简书个人主页',
+			'view' => "一个专注于分享各种技术知识的个人博客，基于简书"
+		),
 		'gitblit.compscosys.cn:8080' => array(
 			'icon' => '/static/img/gitblit.svg',
 			'method' => 'http',

@@ -32,9 +32,9 @@ return array(
 			'title' => '学生数据可视化展示',
 			'view' => '一个学生信息数据可视化展示页面'
 		),
-		'cambridgejames.github.io' => array(
+		'bolg.compscosys.cn' => array(
 			'icon' => '/static/img/hexo.svg',
-			'method' => 'https',
+			'method' => 'http',
 			'title' => '史上最帅的技术宅',
 			'view' => "一个专注于分享各种技术知识的个人博客，基于hexo和 GitHub Pages"
 		),

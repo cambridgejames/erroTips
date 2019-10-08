@@ -32,7 +32,7 @@ return array(
 			'title' => '学生数据可视化展示',
 			'view' => '一个学生信息数据可视化展示页面'
 		),
-		'bolg.compscosys.cn' => array(
+		'blog.compscosys.cn' => array(
 			'icon' => '/static/img/hexo.svg',
 			'method' => 'http',
 			'title' => '史上最帅的技术宅',

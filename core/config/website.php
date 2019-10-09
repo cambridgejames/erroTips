@@ -34,7 +34,7 @@ return array(
 		),
 		'blog.compscosys.cn' => array(
 			'icon' => '/static/img/hexo.svg',
-			'method' => 'http',
+			'method' => 'https',
 			'title' => '史上最帅的技术宅',
 			'view' => "一个专注于分享各种技术知识的个人博客，基于hexo和 GitHub Pages"
 		),
